@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Homepage design with Bootstrap 4 and Animate css</title>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+  <style>
+    .jj{
+         height: 200px;
+     }
+ </style>
+</head>
+<body>
+  <div class="text-center bg-light  ">
+    <a href="Home.html"><img src= "nextag-removebg-preview.png" alt="logo" width="200px"></a>
+</div>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background: #AE0067;">
+      <a href="HOME.html" class="navbar-brand"><i class="fas fa-shopping-bag"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mynavbar" class="collapse navbar-collapse">
+          <ul class="navbar-nav text-center">
+              <li class="nav-item active">
+                  <a href="HOME.html" class="nav-link " style="font-size: 13px;"><i class="fas fa-home"></i> HOME </a>
+              </li>
+              <li class="nav-item dropdown active">
+                  <a href="PURSES.html" class="nav-link dropdown" style="font-size: 13px;" data-toggle="dropdown"><i class="fas fa-shopping-bag"></i> PURSES </a>
+                  <div class="dropdown-menu ">
+                      <a href="../bag & wallet/bags.html" class="dropdown-item " style="font-size: 12px; font-family: sans-serif;" >LADIES BAGS</a>
+                      <div class="dropdown-divider"></div>
+                      <a href="../bag & wallet/wallet.html" class="dropdown-item " style="font-size: 12px; font-family: sans-serif;" >MANS WALLETS</a>
+                  </div>
+              </li>
+              <li class="nav-item active">
+                  <a href="../About us/about.html" class="nav-link" style="font-size: 13px;"><i class="fas fa-address-card"></i> ABOUT US </a>
+              </li>
+              <li class="nav-item dropdown active">
+                  <a href="#" class="nav-link dropdown" style="font-size: 13px;" data-toggle="dropdown"><i class="fas fa-random"></i> COMPAIR </a>
+                  <div class="dropdown-menu">
+                      <a href="../compair purse/compair.html" class="dropdown-item" style="font-size: 12px; font-family: sans-serif;">COMPAIR BAGS</a>
+                      <div class="dropdown-divider"></div>
+                      <a href="../compair wallets/compair wallets.html" class="dropdown-item" style="font-size: 12px; font-family: sans-serif;" >COMPAIR WALLETS</a>
+                  </div>    
+              </li>
+              <li class="nav-item active">
+                  <a href="../bootsstrep responsive assignment e projest/contact US.html" class="nav-link " style="font-size: 13px;"><i class="fas fa-users"></i> CONTACT US </a>
+              </li>
+              <li class="nav-item active">
+                  <a href="../feedback eproject assignment/feedback.html" class="nav-link" style="font-size: 13px;"><i class="fas fa-comments"></i> FEEDBACK </a>
+              </li>
+          </ul>
+      </div>
+      <div class="p-1">
+          <a href="../signin page/signup Page.html" data-toggle="tooltip" title="SIGN UP"><i class="far fa-user text-light"></i></a>
+      <!-- </div>
+     <div class="p-2"> -->
+      <a href="#"  data-toggle="popover" title="CALL US" data-content="tel:03060128852 " data-placement="bottom"><i class="fas fa-phone-square-alt text-light"></i></a>
+     </div>
+
+  </nav>
+  <!-- navbar end -->
+  <!-- carousel -->
+	<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img alt="First slide" class="d-block w-100" src="istockphoto-1133140907-170667a.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated bounceInRight" style="animation-delay: 1s">"NEXTAG" BEST STYLE BAGS</h5>
+					<p class="animated bounceInLeft" style="animation-delay: 2s">The Personality Creating Fashionable Ladies Bags Makes You Decient.</p>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="../bag & wallet/bags.html">More Info</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Second slide" class="d-block w-100" src="istockphoto-1271796113-170667a.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated slideInDown" style="animation-delay: 1s">FASHION INSPIRATIONS</h5>
+					<p class="animated fadeInUp" style="animation-delay: 2s">Give The Fabulus Inspirtion in Evevts , parties .</p>
+					<p class="animated zoomIn" style="animation-delay: 3s"><a href="../bag & wallet/bags.html">More Info</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Third slide" class="d-block w-100" src="Casual-Styled-Mens-Wallet-2.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated zoomIn" style="animation-delay: 1s">MAN'S CASUAL WALLETS</h5>
+					<p class="animated fadeInLeft" style="animation-delay: 2s">Make your Self Handsome & Classic .</p>
+					<p class="animated zoomIn" style="animation-delay: 3s"><a href="../bag & wallet/bags.html">More Info</a></p>
+				</div>
+			</div>
+		</div><a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+	</div>
+  <!-- carousel end -->
+  <div class="container-fluid">
+  <div class="row">
+      <div class="col-md-4 mt-4">
+            <div>
+              <a href="#"><img src="hand-drawn-graphic-bags-different-260nw-435180001.png" alt="nn" width="100%"></a>
+            </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          <a href=""><img src="torn-paper-word-10-off-260nw-330451817.png" alt="aa" width="100%"></a>
+        </div>
+      </div>
+    <div class="shad col-md-4 mt-4">
+      <div class="card ">
+        <a href="#"><img src="shpings.png" alt="rr" class="card-img-top"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -=-=-=-=-=-=-=-=-==offers start**** -->
+<div class="container-fluid" style="border-top-style: dotted; border-color: #ff0099;">
+  <div class="row ">
+    <div class="col-md-6">
+      <div class="mt-4 " >
+        <img src="m1.jpg" alt="n" class="card-img-top image"  height="350px">
+      </div>
+    <div class="middle">
+      <button style="background-color: #f00a94;" class="btn btn-block" type="button"><a class="text-light" href="../bag & wallet/bags.html">Show More</a></button>
+    </div>
+    </div>
+    <div class="col-md-6">
+      <div class="mt-4" >
+        <img src="m2.jpg" alt="n" class="card-img-top image" height="350px" >
+      </div >
+      <button style="background-color: #f00a94;" class="btn btn-block" type="button"><a class="text-light" href="../bag & wallet/wallet.html">Show More</a></button>
+    </div> 
+    <div class="col-md-6">
+      <div class="mt-4" >
+        <img src="m3.jpg" alt="n" class="card-img-top image" height="350px">
+      </div>
+      <button style="background-color: #f00a94;" class="btn btn-block" type="button"><a class="text-light" href="../bag & wallet/bags.html">Show More</a></button>
+    </div>
+    <div class="col-md-6">
+      <div class="mt-4" >
+        <img src="m4.jpg" alt="n" class="card-img-top image"  height="350px">
+      </div>
+      <button style="background-color: #f00a94;" class="btn btn-block" type="button"><a class="text-light" href="../bag & wallet/wallet.html">Show More</a></button>
+    </div> 
+  </div>
+</div>
+
+
+<!-- ==-======---==-=-=-=-offers end+++++++++++ -->
+    <!-- search area -->
+    <div ng-app="" ng-init="product=
+    [
+        {productname:'Pink Bags',productprice:1100,productimage:'00011.jpg',showmore:'00011.html'},
+        {productname:'Gray Bags',productprice:2100,productimage:'00012.jpg',showmore:'00012.html'},
+        {productname:'Lite Pink Bags',productprice:1200,productimage:'00013.jpg',showmore:'00013.html'},
+        {productname:'Camil Bags',productprice:9100,productimage:'00014.jpg',showmore:'00014.html'},
+        {productname:'Lite Blue Bags',productprice:5100,productimage:'00015.jpg',showmore:'00015.html'},
+        {productname:'Red Bags',productprice:6100,productimage:'00016.jpg',showmore:'00016.html'},
+        {productname:'Dark Purp Bags',productprice:6100,productimage:'00017.jpg',showmore:'00017.html'},
+        {productname:'creem Bags',productprice:6100,productimage:'00018.jpg',showmore:'00018.html'},
+        {productname:'Dark blue Bags',productprice:6100,productimage:'00019.jpg',showmore:'00019.html'},
+        {productname:'Black Bags',productprice:7100,productimage:'00020.jpg',showmore:'00020.html'},
+        {productname:'Candy Bags',productprice:7100,productimage:'00021.jpg',showmore:'00021.html'},
+        {productname:'Chocklate Bags',productprice:8100,productimage:'00022.jpg',showmore:'00022.html'}
+
+    ]">
+        <div class="container">
+            <h2 class="mt-3 text-center" style="background-color: #f2f2f2; color: #c40477;">NEW BAGS</h2>
+            <div>
+                <div class="form-group" >
+                    <label for="">Search Bags</label>
+                    <input style="background-color: #fd9fd6; border: solid #c40477;" type="text" placeholder="Search Product"  class="form-control text-light" ng-model="perfume" >
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-4" ng-repeat="a in product | orderBy : '-productprice' | filter : perfume">
+                    <div class="card">
+                        <img src="../aj/Shoulder Bags/{{a.productimage}}" alt="Not Avaialr" class="jj card-img-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title"> {{ a.productname | uppercase}} </h3>
+                            <p class="card-text text-primary"> {{a.productprice}} </p>
+                            <button type="button" class="btn btn-block " style="background-color: #c40477;"> <a href="../img zoom/{{a.showmore}}" class="text-light ">Buy now<i class="fas fa-cart-plus"></i></a>   </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  <!-- searc ebd -->
+<!-- footer................******.... -->
+<footer class="footer container-fluid">
+  <div class="container-fluid">
+    <div class="row border-top border-light">
+      <div class="col-md-3 mt-4">
+        <ul class="list-inline">
+          <h6>CONTACTS</h6>
+          <li>Phone:<a href="#">0301998877</a> </li>
+          <li>Email:<a href="#">nextag@yoyo.com</a> </li>
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square p-2 "></i></a><a href="https://www.instagram.com/explore/"><i class="fab fa-instagram-square"></i></a><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp-square p-2 "></i></a><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square "></i></a> </li>
+        </ul>
+      </div>
+      <div class="col-md-3 mt-4">
+        <h6>ABOUT</h6>
+        <ul class="list-inline">
+          <li><a href="../our story/our story.html">Our story</a></li>
+          <li><a href="../privacy policy/blog.html">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 mt-4">
+        <h6>INFORMATION</h6>
+        <ul class="list-inline ">
+          <li><a href="../About us/FAQs.html" >FAQ</a></li>
+          <li><a href="../terms and servicess/term&servicess.html" >Terms & Services</a></li>
+          <li><a href="../privacy policy/privacy policy.html" >Privicy & Policy</a></li>
+          <li><a href="../terms and servicess/location.html" >Store Location</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 mt-4">
+        <h6>Subscribe and Stay Updated!</h6>
+        <div>
+          <input type="email" class="form-control" placeholder="Enter your Email" required>
+        </div>
+        <br>
+        <div>
+          <button type="submit" class="btn btn-danger text-light">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+<!-- footer end*****,..,,,.,. -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+	</script>
+  <script>
+    function toggleDropdown (e) {
+      const _d = $(e.target).closest('.dropdown'),
+        _m = $('.dropdown-menu', _d);
+      setTimeout(function(){
+        const shouldOpen = e.type !== 'click' && _d.is(':hover');
+        _m.toggleClass('show', shouldOpen);
+        _d.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 100 : 0);
+    }
+    
+    $('body')
+      .on('mouseenter mouseleave','.dropdown',toggleDropdown)
+      .on('click', '.dropdown-menu a', toggleDropdown);
+    </script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover();   
+            });
+            </script>
+</body>
+</html>

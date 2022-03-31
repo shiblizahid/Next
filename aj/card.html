@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+       .jj{
+            height: 200px;
+        }
+    </style>
+</head>
+<body> 
+    <!-- search area -->
+    <div ng-app="" ng-init="product=
+    [
+        {productname:'Pink Bags',productprice:1100,productimage:'00011.jpg',showmore:'00011.html'},
+        {productname:'Gray Bags',productprice:2100,productimage:'00012.jpg',showmore:'00012.html'},
+        {productname:'Lite Pink Bags',productprice:1200,productimage:'00013.jpg',showmore:'00013.html'},
+        {productname:'Camil Bags',productprice:9100,productimage:'00014.jpg',showmore:'00014.html'},
+        {productname:'Lite Blue Bags',productprice:5100,productimage:'00015.jpg',showmore:'00015.html'},
+        {productname:'Red Bags',productprice:6100,productimage:'00016.jpg',showmore:'00016.html'},
+        {productname:'Dark Purp Bags',productprice:6100,productimage:'00017.jpg',showmore:'00017.html'},
+        {productname:'creem Bags',productprice:6100,productimage:'00018.jpg',showmore:'00018.html'},
+        {productname:'Dark blue Bags',productprice:6100,productimage:'00019.jpg',showmore:'00019.html'},
+        {productname:'Black Bags',productprice:7100,productimage:'00020.jpg',showmore:'00020.html'},
+        {productname:'Candy Bags',productprice:7100,productimage:'00021.jpg',showmore:'00021.html'},
+        {productname:'Chocklate Bags',productprice:8100,productimage:'00022.jpg',showmore:'00022.html'}
+
+    ]">
+        <div class="container">
+            <h2 class="mt-3 text-center" style="background-color: #f2f2f2; color: #c40477;">NEW BAGS</h2>
+            <div>
+                <div class="form-group" >
+                    <label for="">Search Bags</label>
+                    <input style="background-color: #fd9fd6; border: solid #c40477;" type="text" placeholder="Search Product"  class="form-control text-light" ng-model="perfume" >
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-4" ng-repeat="a in product | orderBy : '-productprice' | filter : perfume">
+                    <div class="card">
+                        <img src="Shoulder Bags/{{a.productimage}}" alt="Not Avaialr" class="jj card-img-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title"> {{ a.productname | uppercase}} </h3>
+                            <p class="card-text text-primary"> {{a.productprice}} </p>
+                            <button type="button" class="btn btn-block " style="background-color: #c40477;"> <a href="../img zoom/{{a.showmore}}" class="text-light ">Buy now<i class="fas fa-cart-plus"></i></a>   </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  <!-- searc ebd -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+    </script>
+</body>
+</html>

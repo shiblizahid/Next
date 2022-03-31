@@ -1,0 +1,82 @@
+body {
+    font-family: monospace;
+    /* background-image: url(backgroun.jpg); */
+    background: linear-gradient(to bottom, #ffffff 0%, #ffccff 100%);
+    background-size: cover;
+}
+
+.heading {
+    
+    font-size: 45px;
+    border-bottom: 2px dotted white;
+    font-family: 'Lobster', cursive;
+}
+
+.container {
+    background:rgba(0,0,0,.5);
+    color: white;
+}
+
+.btn-info {
+    width: 50%;
+    letter-spacing: 2px;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-info:hover {
+    transform: scale(1.05);
+}
+
+.icn {
+    transform: all 0.5s ease-in-out;
+    color: white;
+    font-family: monospace;
+    font-size: 17px;
+    font-family: 'EB Garamond', serif;
+}
+.icn:hover{
+    /* transform: scale(1.05); */
+    color: #d87093;
+    cursor: pointer;
+}
+.fas{
+    transition: all 0.5s ease-in-out;
+    color: #d87093;
+    }
+    .fas:hover{
+        /* transform: scale(1.05); */
+        color: blue;
+    }
+
+hr {
+    /* width: 80%; */
+    border-bottom: 2px dotted white;
+
+}
+
+ul a{
+    transition: all 0.5s ease-in-out;
+    color:#d87093;
+    float: left;
+    font-family: monospace;
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 1px;
+}
+
+ul a:hover {
+    transform: scale(1.05);
+    color: blue;
+    /* border: 0px solid transparent;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10%;
+    background-color:#fff; */
+}
+.k{
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+

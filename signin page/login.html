@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+    .btn-block {
+        background-color: #ae0067;
+        color: #fff;
+    }
+
+    .log {
+        color: #ae0067;
+    }
+
+    .form-container {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px #000;
+        position: absolute;
+        top: 15vh;
+    }
+    .error{
+            color:red;         
+        }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <form class="form-container p-4 ">
+                <button class="close"> <a href="#homepage">&times;</a></button>
+                <h3 class="text-center font-weight-normal log">LOGIN</h3>
+                <input type="text" name="username" placeholder="Username" class="form-control form-group">
+
+                
+                <div class="input-group form-group">
+                   
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fas fa-eye-slash" id="myslash"></i>
+                        </div>
+                    </div>
+                    <input type="text" name="pwsd" placeholder="Password" class="form-control form-group">
+                </div>
+                <button class="btn btn-block">Sign In</button>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember Me
+                        </label>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="pwsd.html">Forgot password?</a>
+
+                    </div>
+                </div>
+
+                <h6 class="text-center font-weight-normal mt-4">
+                    .....Continue With.....
+                </h6>
+                <div class="container-fluid">
+                    <div class="row mt-4">
+                        <div class="col-md-4  text-center">
+                            <a href="http://www.facebook.com">
+                                <img src="https://img.icons8.com/color/48/000000/facebook-new.png"/>
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <a href="http://www.gmail.com">
+                            <img src="https://img.icons8.com/color/48/000000/gmail-new.png"/>
+                        </a>
+                        </div>
+                        <div class="col-md-4  text-center">
+                            <a href="http://www.instagram.com">
+                                <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="create mt-4">
+                    <h9>
+                        Don't have an Account <a href="signup Page.html"> Create an Account</a>
+                    </h9>
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="jquery-validation-1.19.3/dist/jquery.validate.js"></script>
+    <script src="jquery-validation-1.19.3/dist/additional-methods.js"></script>
+    <script>
+        $(function(){
+           $("form").validate({
+               "rules":{
+                   "username":{
+                       required:true,
+                       lettersonly:true,
+                   },
+                   "pwsd":{
+                        required:true,
+                        minlength:8,
+                        maxlength:12
+                   }
+               },
+               "messages":{
+                   "username":{
+                    required:"Input Username",
+                       email:"Invalid Email"
+                   },
+                   "pwsd":{
+                    required:"Input Password",
+                   }
+                   
+               }
+           })
+        })
+    </script>
+</body>
+
+</html>

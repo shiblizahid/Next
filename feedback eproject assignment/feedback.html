@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</head>
+<style>
+    .form-container {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px #ae0067;
+        position: absolute;
+        top: 8vh;
+    }
+    .button {
+        color: #fff;
+        background-color: #ae0067;
+        transition: all 0.5s ease-in-out;
+        font-size: 20px;
+    }
+
+    .button:hover {
+        transform: scale(1.05);
+    }
+    .m{
+        color: #ae0067;
+    }
+
+    .erroraya {
+        border: 1px solid red;
+        box-shadow: 01px 0px 0px #d87093;
+    }
+
+    .errorgya {
+        border: 1px solid rgb(109, 107, 107);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <form class="form-container p-4">
+                <h1 class="text-center font-weight-normal m">FEEDBACK</h1>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <input type="text" placeholder="First Name" name="username" class="form-control form-group">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" placeholder="Last Name" name="usernames" class="form-control form-group ">
+                    </div>
+                </div>
+                <input type="email" placeholder="Your Email" name="email" class="form-control mt-2">
+                <label class="mt-2">Our Products</label>
+                <select class="form-control" name="anyone">
+                    <option selected disabled>Select any one</option>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Better</option>
+                    <option>Bad</option>
+                </select>
+
+                <label class="mt-2">How would you rate acheivement of our Product (out of 5)?</label>
+                <select class="form-control" name="select">
+                    <option selected disabled>Select any one</option>
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </select>
+
+                <label class="mt-2">How would you rate acheivement of our Product (Description)?</label>
+                <input type="text" name="decr" class="form-control" placeholder="Description">
+
+                <label class="mt-2">What Your Country or City?</label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-control" name="cc">
+                            <option selected disabled>Select Country</option>
+                            <option>Pakistan</option>
+                            <option>India</option>
+                            <option>UAE</option>
+                            <option>Europe</option>
+                            <option>Bangladesh</option>
+                            <option>Newzeland</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-control" name="ccs">
+                            <option selected disabled>Select City</option>
+                            <option>Karachi</option>
+                            <option>Islamabad</option>
+                            <option>Shaja</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="text-center mt-2">
+                    <button class="button btn btn-block">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="jquery-validation-1.19.3/dist/jquery.validate.js"></script>
+    <script src="jquery-validation-1.19.3/dist/additional-methods.js"></script>
+
+    <script>
+        $(function () {
+            $.validator.addMethod( "myvalidation", function( value, element ) {
+	        return /^[a-zA-Z ]*$/.test( value );
+            }, "Letters only please" );
+            $("form").validate({
+                "rules": {
+                    "username": {
+                        required: true,
+                        myvalidation: true,
+                        minlength: 3,
+                        maxlength: 20
+                    },
+                    "usernames": {
+                        required: true,
+                        myvalidation: true,
+                        minlength: 3,
+                        maxlength: 20
+                    },
+                    "email": {
+                        required: true,
+                        email: true
+                    },
+                    "anyone": {
+                        required: true,
+                    },
+                    "select": {
+                        required: true,
+                    },
+                    "decr": {
+                        required: true,
+                        minlength: 3,
+                        maxlength: 20
+                    },
+                    "cc": {
+                        required: true,
+                    },
+                    "ccs": {
+                        required: true,
+                    }
+                },
+                "messages": {
+                    "username": {
+                        required: "Required",
+                        lettersonly: "Name Contains Alphabets only",
+                        minlength: "Name must be 3 characters long",
+                        maxlength: "Name should be less than 20 characters long"
+                    },
+                    "usernames": {
+                        required: "Required",
+                        lettersonly: "Name Contains Alphabets only",
+                        minlength: "Name must be 3 characters long",
+                        maxlength: "Name should be less than 20 characters long"
+                    },
+                    "email": {
+                        required: "Required",
+                        email: "Invalid Email",
+                    },
+                    "anyone": {
+                        required: "Required",
+                    },
+                    "select": {
+                        required: "Required",
+                    },
+                    "decr": {
+                        required: "Required",
+                        minlength: "Name must be 20 characters long",
+                        maxlength: "Name should be less than 200 characters long"
+                    },
+                    "cc": {
+                        required: "Required",
+                    },
+                    "ccs": {
+                        required: "Required",
+                    }
+                },
+                highlight: function (e) {
+                    $(e).addClass("erroraya");
+                },
+                unhighlight: function (e) {
+                    $(e).addClass("errorgya");
+                    $(e).removeClass("erroraya");
+
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>

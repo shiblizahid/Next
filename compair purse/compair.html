@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.css">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+<style>
+    body{
+        background-image: url("bgr.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+    }
+    .card img{
+        height: 300px;
+    }
+    .div1{
+        display: none;
+    }
+    .div2{
+        display: none;
+    }
+    .footer{
+	background: #cecece;
+}
+.footer ul li a{
+	color: #000;
+	text-decoration: none;
+}
+.footer ul li a:hover{
+	color: rgb(237, 7, 187);
+	padding: 20px;
+	font-size: large;
+}
+</style>
+</head>
+<body>
+    <div class="text-center bg-light  ">
+        <a href="../EPROJECT,,NEXTAG,,/HOME.html"><img src= "/EPROJECT,,NEXTAG,,/nextag-removebg-preview.png" alt="logo" width="200px"></a>
+    </div>
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background: #AE0067;">
+          <a href="../EPROJECT,,NEXTAG,,/HOME.html" class="navbar-brand"><i class="fas fa-shopping-bag"></i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="mynavbar" class="collapse navbar-collapse">
+              <ul class="navbar-nav text-center">
+                  <li class="nav-item active">
+                      <a href="../EPROJECT,,NEXTAG,,/HOME.html" class="nav-link " style="font-size: 13px;"><i class="fas fa-home"></i> HOME </a>
+                  </li>
+                  <li class="nav-item dropdown active">
+                      <a href="PURSES.html" class="nav-link dropdown" style="font-size: 13px;" data-toggle="dropdown"><i class="fas fa-shopping-bag"></i> PURSES </a>
+                      <div class="dropdown-menu ">
+                          <a href="../bag & wallet/bags.html" class="dropdown-item " style="font-size: 12px; font-family: sans-serif;" >LADIES BAGS</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="../bag & wallet/wallet.html" class="dropdown-item " style="font-size: 12px; font-family: sans-serif;" >MANS WALLETS</a>
+                      </div>
+                  </li>
+                  <li class="nav-item active">
+                      <a href="../About us/about.html" class="nav-link" style="font-size: 13px;"><i class="fas fa-address-card"></i> ABOUT US </a>
+                  </li>
+                  <li class="nav-item dropdown active">
+                      <a href="COMPAIR.html" class="nav-link dropdown" style="font-size: 13px;" data-toggle="dropdown"><i class="fas fa-random"></i> COMPAIR </a>
+                      <div class="dropdown-menu">
+                          <a href="../compair purse/compair.html" class="dropdown-item" style="font-size: 12px; font-family: sans-serif;">COMPAIR BAGS</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="../compair wallets/compair wallets.html" class="dropdown-item" style="font-size: 12px; font-family: sans-serif;" >COMPAIR WALLETS</a>
+                      </div>    
+                  </li>
+                  <li class="nav-item active">
+                      <a href="../bootsstrep responsive assignment e projest/contact US.html" class="nav-link " style="font-size: 13px;"><i class="fas fa-users"></i> CONTACT US </a>
+                  </li>
+                  <li class="nav-item active">
+                      <a href="../feedback eproject assignment/feedback.html" class="nav-link" style="font-size: 13px;"><i class="fas fa-comments"></i> FEEDBACK </a>
+                  </li>
+              </ul>
+          </div>
+          <div class="p-1">
+              <a href="../signin page/signup Page.html" data-toggle="tooltip" title="SIGN UP"><i class="far fa-user text-light"></i></a>
+          <!-- </div>
+         <div class="p-2"> -->
+          <a href="#"  data-toggle="popover" title="CALL US" data-content="tel:03060128852 " data-placement="bottom"><i class="fas fa-phone-square-alt text-light"></i></a>
+         </div>
+    
+      </nav>
+      <!-- navbar end -->
+    <div class="container mt-4" style="background-color: rgb(231, 97, 142); border-radius: 4px 45px;text-shadow: rgb(0, 0, 0) 1px 1px;">
+        <h1 class="text-center text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">NEXTAG</h1>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <p class="text-center text-light" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">COMPAIRING</p>
+                <select id="dropdown1" class="form-control">
+                    <option value="">TOP 10 EXPENSIVE PURSE BRANDS</option>
+                    <option value="Chanel">1) Chanel</option>
+                    <option value="Balenciaga">2) Balenciaga</option>
+                    <option value="Burberry">3) Burberry</option>
+                    <option value="Chloé">4) Chloé</option>
+                    <option value="ChristianDior">5) Christian Dior</option>
+                    <option value="Celine">6) Celine</option>
+                    <option value="Givenchy">7) Givenchy</option>
+                    <option value="Goyard">8) Goyard</option>
+                    <option value="Gucci">9) Gucci</option>
+                    <option value="Hermès">10) Hermès</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <p class="text-center text-light" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">COMPAIRING</p>
+                <select id="dropdown2" class="form-control">
+                    <option value="">10 EXPENSIVE PURSE BRANDS</option>
+                    <option value="JudithLeiber">1) Judith Leiber</option>
+                    <option value="MarcJacobs">2) Marc Jacobs</option>
+                    <option value="Mulberry">3) Mulberry</option>
+                    <option value="Prada">4) Prada</option>
+                    <option value="TomFord">5) Tom Ford</option>
+                    <option value="Valentino">6) Valentino </option>
+                    <option value="YvesSaintLaurent">7) Yves Saint Laurent</option>
+                    <option value="Stylo">8) Stylo</option>
+                    <option value="Laam">9) Laam</option>
+                    <option value="YSL">10) YSL</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="div1" id="myChanel">
+                        <div class="card">
+                            <img src="chanel.jpg" alt="Not Available" class="card-image-top w-100 image-fluid">
+                            <h3 class="card-title">Chanel</h3>
+                            <p>Grained Calfskin & Gold-Tone Metal
+                                Black</p>
+                        </div>
+                    </div>
+
+                    <div class="div1" id="myBalenciaga">
+                        <div class="card">
+                            <img src="balen.jpg" alt="Not Available" class="card-image-top w-100 image-fluid">
+                            <h3 class="card-title">Balenciaga</h3>
+                            <p style="font-family: cursive;">WOMEN'S HOURGLASS SMALL TOP HANDLE BAG IN GREEN
+                                Hourglass Small Top Handle Bag in green metallized embossed crocodile calfskin, dark silver hardware</p>
+                        </div>
+                    </div>
+
+                    <div class="div1" id="myBurberry">
+                        <div class="card">
+                            <img src="burberry.jpg" alt="Not Available" class="card-image-top w-100 image-fluid">
+                            <h3 class="card-title">Burberry</h3>
+                            <p>Mini Knitted Check and Leather Pocket Bag......</p>
+                               <p>COLOUR:Dark Birch Brown</p>
+                        </div>
+                    </div>
+
+                    <div class="div1" id="myChloé">
+                        <div class="card">
+                            <img src="chloe.jpg" alt="Not Available" class="card-image-top w-100 image-fluid">
+                            <h3 class="card-title">Chloé</h3>
+                            <p>SMALL KEY BUCKET BAG
+                                Small Key bucket bag in linen & shiny calfskin</p>
+                        </div>
+                    </div>
+
+                    <div class="div1" id="myChristianDior">
+                        <div class="card">
+                            <img src="christian dior.jpg" alt="Not Available" class="card-image-top w-100 image-fluid">
+                            <h3 class="card-title">Christian Dior</h3>
+                            <p>SMALL DIOR BOOK TOTE
+                                Latte Calfskin with Gold-Tone Metallic Thread Cornely-Effect Embroidery</p>
+                        </div>
+                    </div>
+
+                    <div class="div1" id="myCeline">
+                        <div class="card">
+                            <img src="celin dior.jpg" alt="Not Available" class="card-image-top w-100 image-fluid">
+                            <h3 class="card-title">Celine</h3>
+                            <p>SMALL BUCKET CUIR TRIOMPHE IN TEXTILE AND CALFSKIN
+                                VANILLA / BLACK</p>
+                        </div>
+                    </div>
+
+                    <div class="div1" id="myGivenchy">
+                        <div class="card">
+                            <img src="balen2.jpg" alt="Not Available" class="card-image-top w-100 image-fluid">
+                            <h3 class="card-title">Givenchy</h3>
+                            <p>SMALL MOON CUT OUT BAG IN LEATHER</p>
+                        </div>
+                    </div>
+
+                    <div class="div1" id="myGoyard">
+                        <div class="card">
+                            <img src="goyard.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Goyard</h3>
+                            <p>MINI ANTIGONA BAG IN BOX LEATHER WITH MULTIPLE  GOLDEN CHAINS</p>
+                        </div>
+                    </div>
+
+                    <div class="div1" id="myGucci">
+                        <div class="card">
+                            <img src="guccii.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Gucci</h3>
+                            <p>The small GG Marmont chain shoulder bag has a softly structured shape and an oversized flap closure with Double G hardware. The sliding chain strap can be worn multiple ways, changing between a shoulder and a top handle bag. Made in matelassé chevron leather with a heart on the back with dusty pink colour. </p>
+                        </div>
+                    </div>
+
+                    <div class="div1" id="myHermès">
+                        <div class="card">
+                            <img src="hermis.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Hermès</h3>
+                            <p>Bag in "Faubourg Rainbow" printed silk and Swift calfskin with adjustable strap and palladium plated hardware
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="div2" id="myJudithLeiber">
+                        <div class="card">
+                            <img src="lk.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Judith Leiber</h3>
+                            <p>Women's Yellow Rose Chain Clutch Bag</p>
+                        </div>
+                    </div>
+
+                    <div class="div2" id="myMarcJacobs">
+                        <div class="card">
+                            <img src="marc.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Marc Jacobs</h3>
+                            <p>Blue Le Chiquito Noeud Leather Bag</p>
+                        </div>
+                    </div>
+
+                    <div class="div2" id="myMulberry">
+                        <div class="card">
+                            <img src="mulberry55.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Mulberry</h3>
+                            <p>Mulberry Women's Alexa In Green Heavy Grain</p>
+                        </div>
+                    </div>
+
+                    <div class="div2" id="myPrada">
+                        <div class="card">
+                            <img src="parada.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Prada</h3>
+                            <p>Small sequined mesh tote bag</p>
+                        </div>
+                    </div>
+
+                    <div class="div2" id="myTomFord">
+                        <div class="card">
+                            <img src="toom.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Tom Ford</h3>
+                            <p>Medium Python Natalia Shoulder Bag</p>
+                        </div>
+                    </div>
+
+                    <div class="div2" id="myValentino">
+                        <div class="card">
+                            <img src="v.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Valentino</h3>
+                            <p>Supervee crossbody bag</p>
+                        </div>
+                    </div>
+
+                    <div class="div2" id="myYvesSaintLaurent">
+                        <div class="card">
+                            <img src="ysll.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Yves Saint Laurent</h3>
+                            <p>Sunset crossbody bag</p>
+                        </div>
+                    </div>
+
+                    <div class="div2" id="myStylo">
+                        <div class="card">
+                            <img src="stylo.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Stylo</h3>
+                            <p>Mustard Color Formal Shoulder Bag</p>
+                        </div>
+                    </div>
+
+                    <div class="div2" id="myLaam">
+                        <div class="card">
+                            <img src="laam.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">Laam</h3>
+                            <p>FANTASTIC NUDE YELLOW WITH BLUE RIBBON</p>
+                        </div>
+                    </div>
+
+                    <div class="div2" id="myYSL">
+                        <div class="card">
+                            <img src="ysl.jpg" alt="Not Available" class="card-image-top width-100 image-fluid">
+                            <h3 class="card-title">YSL</h3>
+                            <p>Saint Laurent monogram plaque round crossbody bag</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<!-- ==-======---==-=-=-=-offers end+++++++++++ -->
+<!-- footer................******.... -->
+<footer class="footer container-fluid">
+    <div class="container-fluid">
+      <div class="row border-top border-light">
+        <div class="col-md-3 mt-4">
+          <ul class="list-inline">
+            <h6>CONTACTS</h6>
+            <li>Phone:<a href="#">0301998877</a> </li>
+            <li>Email:<a href="#">nextag@yoyo.com</a> </li>
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square p-2 "></i></a><a href="https://www.instagram.com/explore/"><i class="fab fa-instagram-square"></i></a><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp-square p-2 "></i></a><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square "></i></a> </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mt-4">
+          <h6>ABOUT</h6>
+          <ul class="list-inline">
+            <li><a href="../our story/our story.html">Our story</a></li>
+            <li><a href="../privacy policy/blog.html">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mt-4">
+          <h6>INFORMATION</h6>
+          <ul class="list-inline ">
+            <li><a href="../About us/FAQs.html" >FAQ</a></li>
+            <li><a href="../terms and servicess/term&servicess.html" >Terms & Services</a></li>
+            <li><a href="../privacy policy/privacy policy.html" >Privicy & Policy</a></li>
+            <li><a href="../terms and servicess/location.html" >Store Location</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mt-4">
+          <h6>Subscribe and Stay Updated!</h6>
+          <div>
+            <input type="email" class="form-control" placeholder="Enter your Email" required>
+          </div>
+          <br>
+          <div>
+            <button type="submit" class="btn btn-danger text-light">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+  <!-- footer end*****,..,,,.,. -->
+<link rel="stylesheet" href="bootstrap-4.0.0/dist/js/bootstrap.js">
+
+    <script>
+        $(function(){
+            $("#dropdown1").change(function(){
+                var a=$(this).val();
+                $(".div1").hide();
+                $("#my"+a).show();
+            })
+            $("#dropdown2").change(function(){
+                var b=$(this).val();
+                $(".div2").hide();
+                $("#my"+b).show();
+            })
+        })
+    </script>
+</body>
+</html>
